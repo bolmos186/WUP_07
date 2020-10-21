@@ -22,7 +22,12 @@ kRdata <- read.csv(file = 'kRdata.csv')
 Some of the data was uncoded for sex - sex must be just male or female
 77 of the data entries were coded sex  as blank, so we omit these.
 state of a patient must be died or alive - we adjust that as well   
-  
+
+$H_0$: There is no relationship between sex and amount of people dying from covid.
+
+
+$H_A$: There is a relationship between sex and amount of people dying from covid.
+
 # Question 1 - Is dying independent of sex
 
 
@@ -76,3 +81,4 @@ The odds ratio is 2.3 to 1
 
 ## Conclusions
 
+The p value is .001 which means that the chances of getting results that we just obtained if the null hypothesis is true. Based on the chances of being so low we reject the null hypothesis and accept that there is a relationship between sex and amount of people dying due to covid. 
