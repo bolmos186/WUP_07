@@ -1,6 +1,6 @@
 ---
 title: "covid 19"
-author: "Dr K"
+author: "Bethanee Olmos"
 date: "5/2/2020"
 output:
   html_document: default
