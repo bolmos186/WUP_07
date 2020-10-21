@@ -409,9 +409,19 @@ with(kRdata, table(Sex, result))</code></pre>
 </div>
 <div id="numerical-results" class="section level2">
 <h2>Numerical results</h2>
-</div>
-<div id="inferential-results" class="section level2">
-<h2>Inferential results</h2>
+<pre class="r"><code>table1 &lt;- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)</code></pre>
+<pre><code>##        Sex
+## result    F   M Total
+##   alive  56  44   100
+##   dead   36  64   100</code></pre>
+<pre class="r"><code>colPerc(table1)</code></pre>
+<pre><code>##        Sex
+## result      F   M
+##   alive  98.7  97
+##   dead    1.4   3
+##   Total 100.0 100</code></pre>
+<p>56% of those alive are females and 36% are dead, 44% of those alive are male and 64% of those are dead. ## Inferential results</p>
 </div>
 <div id="conclusions" class="section level2">
 <h2>Conclusions</h2>
