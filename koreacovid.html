@@ -422,6 +422,50 @@ rowPerc(table1)</code></pre>
 ##   dead    1.4   3
 ##   Total 100.0 100</code></pre>
 <p>56% of those alive are females and 36% are dead, 44% of those alive are male and 64% of those are dead. ## Inferential results</p>
+<pre class="r"><code>chisq.test(table1)</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
+## 
+## data:  table1
+## X-squared = 10, df = 1, p-value = 0.001</code></pre>
+<pre class="r"><code>chisqtestGC(table1)</code></pre>
+<pre><code>## Pearson&#39;s Chi-squared test with Yates&#39; continuity correction 
+## 
+## Observed Counts:
+##        Sex
+## result     F    M
+##   alive 1831 1411
+##   dead    25   44
+## 
+## Counts Expected by Null:
+##        Sex
+## result     F    M
+##   alive 1817 1425
+##   dead    39   30
+## 
+## Contributions to the chi-square statistic:
+##        Sex
+## result     F    M
+##   alive 0.10 0.13
+##   dead  4.84 6.17
+## 
+## 
+## Chi-Square Statistic = 10 
+## Degrees of Freedom of the table = 1 
+## P-Value = 0.0012</code></pre>
+<pre class="r"><code>fisher.test(table1)</code></pre>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  table1
+## p-value = 9e-04
+## alternative hypothesis: true odds ratio is not equal to 1
+## 95 percent confidence interval:
+##  1.4 3.9
+## sample estimates:
+## odds ratio 
+##        2.3</code></pre>
+<p>The odds of dying if you are a male is 44/1411, The odds of dying if you are a female is 25/1831. The odds ratio is (44/1411)/(25/1831) The odds ratio is 2.3 to 1</p>
 </div>
 <div id="conclusions" class="section level2">
 <h2>Conclusions</h2>
