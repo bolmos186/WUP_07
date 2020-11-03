@@ -81,4 +81,4 @@ The odds ratio is 2.3 to 1
 
 ## Conclusions
 
-The p value is .001 which means that the chances of getting results that we just obtained if the null hypothesis is true. Based on the chances of being so low we reject the null hypothesis and accept that there is a relationship between sex and amount of people dying due to covid. 
+The p value is .001 which means that the chances of getting results that we just obtained if the null hypothesis is true. Based on the chances of being so low we reject the null hypothesis and accept that there is a relationship between sex and amount of people dying due to covid and conclude that men die at a higher rate than men do. 
